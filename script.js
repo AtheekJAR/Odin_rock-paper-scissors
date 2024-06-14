@@ -18,3 +18,39 @@ function getHumanChoice(){
         console.log("Invalid choice. Please enter rock, paper, or scissors.");
     }
 }
+
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound(humanChoice, computerChoice) {
+    if(humanChoice === computerChoice){
+        humanScore++;
+        computerScore++;
+        console.log("It's a tie! Both chose " + humanChoice);
+    }else if(humanChoice === 'rock') {
+        if(computerChoice === 'scissors'){
+            humanScore++;
+            console.log("You win! Rock beats scissors.");
+        }else {
+            computerScore++;
+            console.log("You lose! Paper beats rock.");
+        }
+    }else if(humanChoice === 'paper') {
+        if(computerChoice === 'rock'){
+            humanScore++;
+            console.log("You win! Paper beats rock.");
+        }else {
+            computerScore++;
+            console.log("You lose! Scissors beats paper.");
+        }
+    }else{
+        if(computerChoice === 'paper'){
+            humanScore++;
+            console.log("You win! scissors beats paper.");
+        }else{
+            computerScore++;
+            console.log("You lose! Rock beats scissors.");
+        }
+    }
+       
+}
