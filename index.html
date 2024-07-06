@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin_rock-paper-scissors</title>
 </head>
+
 <body>
-    
+
+    <h3 class="title">Rock paper scissors</h3>
+
+    <button class="btn" onclick="getResult('Rock')"><img class="emojies" src="images/rock-emoji.png"
+            alt="rock-emoji"></button>
+    <button class="btn" onclick="getResult('Paper')"><img class="emojies" src="images/paper-emoji.png"
+            alt="paper-emoji"></button>
+    <button class="btn" onclick="getResult('Scissors')"><img class="emojies" src="images/scissors-emoji.png"
+            alt="scissors-emoji"></button>
+
+
+    <p class="js-result result"></p>
+
+    <p class="js-moves moves"></p>
+    <p class="js-score score"></p>
+    <button class="reset-btn">Reset score</button>
 
 
     <script src="script.js"></script>
+
+
 </body>
+
 </html>
